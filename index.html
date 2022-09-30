@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./dist/main.css" />
-    <link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
-    <title>Daily Nutrients Requirements</title>
-    <!-- <script src="/d3.v5.js"></script> -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <!-- <script src="/src/scripts/d3-tip.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
-
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Trend Chronicle</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="./src/styles/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 
 <body>
-    <!-- <div id="intro" class="outer-margin">
-        <h2 class="title">Daily Nutrients Requirement</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ut dolorum dolores illo soluta ad quas nam delectus commodi, porro similique corporis nihil, possimus hic est. Dolorum quos magni harum?
-        </p>
-    </div> -->
+    <h1 id="main-header">Trends Through the Decades</h1>
+    <nav class="navbar navbar-default">
+        <div class="col-md-4 col-sm-12">
+            <select id="year-select" class="form-control">
+                <option selected value="1960s">1960s</option>
+                <option value="1970s">1970s</option>
+                <option value="1980s">1980s</option>
+                <option value="1990s">1990s</option>
+                <option value="2000s">2000s</option>
+                <option value="2010s">2010s</option>
+            </select>
+        </div>
+    </nav>
+    <svg width="600" height="400"></svg>
 
-    <div class="canva">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="./dist/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="./dist/wordcloud.js"></script>
 
-    </div>
-
-    <!-- <div id="user-form">
-
-    </div> -->
 </body>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script> -->
-<script src="./dist/main.js"></script>
-</html>
